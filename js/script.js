@@ -7,35 +7,40 @@ const quotes = [
     source: "Rafiki",
     voice: 'Robert Guillaume',
     citation: "The Lion King",
-    year: "1994"
+    year: "1994",
+    image: '../images/rafiki.png'
   },
   {
     quote: "Nobody is gonna hit as hard as life, but it ain’t how hard you can hit. It’s how hard you can get hit and keep moving forward. It’s how much you can take, and keep moving forward. That’s how winning is done.",
     source: "Rocky Balboa",
     actor: "Sylvester Stalone",
     citation: "Rocky Balboa",
-    year: "2006"
+    year: "2006",
+    image: '../images/rocky.png'
   },
   {
     quote: "Why do we fall sir? So that we can learn to pick ourselves up.",
     source: "Alfred Pennyworth",
     actor: "Michael Caine",
     citation: "Batman Begins",
-    year: "2005"
+    year: "2005",
+    image: '../images/batman.png'
   },
   {
     quote: "All we have to decide is what to do with the time that is given to us.",
     source: "Gandalf the Grey",
     actor: "Sir Ian McKellen",
     citation: "The Lord of the Rings: The Fellowship of the Ring",
-    year: "2001"
+    year: "2001",
+    image: '../images/gandalf.png'
   },
   {
     quote: "No. Try not. Do… or do not. There is no try.",
     source: "Yoda",
     voice: "Frank Oz",
     citation: "Star Wars Episode V: The Empire Strikes Back",
-    year: "1980"
+    year: "1980",
+    image: '../images/yoda.png'
   }
 ];
 
@@ -60,7 +65,8 @@ const printQuote = () => {
   `;
   document.querySelector('#quote-box').innerHTML = html;
   // Give the body a new background color set to a random rbg value
-  document.body.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`
+  document.body.style.background = `url(${quote.image}) bottom right no-repeat`;
+  document.body.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
 };
 
 // call the printQuote function every 5 seconds

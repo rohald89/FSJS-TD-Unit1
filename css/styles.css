@@ -10,6 +10,7 @@ body {
   color: white;
   font-family: "Playfair Display", serif;
   padding: 5px;
+  height: 100vh;
 }
 
 header {
@@ -52,7 +53,8 @@ h1 {
   width: 90%;
   max-width: 1024px;
   margin: auto;
-  padding: 5px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .quote-box {
