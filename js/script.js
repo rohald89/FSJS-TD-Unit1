@@ -68,7 +68,7 @@ const printQuote = () => {
   document.body.style.background = `url(${quote.image}) bottom right no-repeat`;
   document.body.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
 };
-
+printQuote();
 // call the printQuote function every 5 seconds
 setInterval(printQuote, 5000);
 
