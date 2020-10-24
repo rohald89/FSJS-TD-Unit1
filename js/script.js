@@ -8,7 +8,7 @@ const quotes = [
     voice: 'Robert Guillaume',
     citation: "The Lion King",
     year: "1994",
-    image: '../images/rafiki.png'
+    image: './images/rafiki.png'
   },
   {
     quote: "Nobody is gonna hit as hard as life, but it ain’t how hard you can hit. It’s how hard you can get hit and keep moving forward. It’s how much you can take, and keep moving forward. That’s how winning is done.",
@@ -16,7 +16,7 @@ const quotes = [
     actor: "Sylvester Stalone",
     citation: "Rocky Balboa",
     year: "2006",
-    image: '../images/rocky.png'
+    image: './images/rocky.png'
   },
   {
     quote: "Why do we fall sir? So that we can learn to pick ourselves up.",
@@ -24,7 +24,7 @@ const quotes = [
     actor: "Michael Caine",
     citation: "Batman Begins",
     year: "2005",
-    image: '../images/batman.png'
+    image: './images/batman.png'
   },
   {
     quote: "All we have to decide is what to do with the time that is given to us.",
@@ -32,7 +32,7 @@ const quotes = [
     actor: "Sir Ian McKellen",
     citation: "The Lord of the Rings: The Fellowship of the Ring",
     year: "2001",
-    image: '../images/gandalf.png'
+    image: './images/gandalf.png'
   },
   {
     quote: "No. Try not. Do… or do not. There is no try.",
@@ -40,7 +40,7 @@ const quotes = [
     voice: "Frank Oz",
     citation: "Star Wars Episode V: The Empire Strikes Back",
     year: "1980",
-    image: '../images/yoda.png'
+    image: './images/yoda.png'
   }
 ];
 
