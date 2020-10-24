@@ -64,7 +64,7 @@ const printQuote = () => {
     <p class="actor">${quote.actor ? 'Played by: ' + quote.actor : ""}${quote.voice ? 'Voiced by: ' + quote.voice : ""}</p>
   `;
   document.querySelector('#quote-box').innerHTML = html;
-  // Give the body a new background color set to a random rbg value
+  // Give the body a background image and set a random background color
   document.body.style.background = `url(${quote.image}) bottom right no-repeat rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
 };
 printQuote();
