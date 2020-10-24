@@ -5,7 +5,7 @@ const quotes = [
   {
     quote: "Oh yes, the past can hurt. But from the way I see it, you can either run from it, or… learn from it.",
     source: "Rafiki",
-    actor: 'Robert Guillaume',
+    voice: 'Robert Guillaume',
     citation: "The Lion King",
     year: "1994"
   },
@@ -33,7 +33,7 @@ const quotes = [
   {
     quote: "No. Try not. Do… or do not. There is no try.",
     source: "Yoda",
-    actor: "Frank Oz",
+    voice: "Frank Oz",
     citation: "Star Wars Episode V: The Empire Strikes Back",
     year: "1980"
   }
@@ -52,15 +52,19 @@ const getRandomQuote = () => quotes[Math.floor(Math.random() * quotes.length)];
  * save the random quote object in a variable and create the HTML based on this object
 ***/
 const printQuote = () => {
-  const quote = getRandomQuote(quotes);
+  const quote = getRandomQuote();
   const html = `
     <p class="quote">${quote.quote}</p>
     <p class="source">${quote.source} ${quote.citation ? '<span class="citation">' + quote.citation + '</span>' : ''}${quote.year ? '<span class="year">' + quote.year + '</span>' : ''}</p>
-    <p class="actor">Played by: ${quote.actor}</p>
+    <p class="actor">${quote.actor ? 'Played by: ' + quote.actor : ""}${quote.voice ? 'Voiced by: ' + quote.voice : ""}</p>
   `;
   document.querySelector('#quote-box').innerHTML = html;
+  // Give the body a new background color set to a random rbg value
   document.body.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`
 };
+
+// call the printQuote function every 5 seconds
+setInterval(printQuote, 5000);
 
 
 /***
@@ -69,5 +73,3 @@ const printQuote = () => {
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
-
-setInterval(printQuote, 5000)
